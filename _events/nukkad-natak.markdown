@@ -24,7 +24,7 @@ registration_link:  /reg_details/
 - Waqt Par Pehchaan: Awareness of anxiety and depression in teenagers can prevent a crisis.
 - Soch Badlo, Samaaj Badlega- Gender discrimination and its toll on mental health
 - Digital Duniya Ka Aks: Social Media addiction and cyberbullying effect on mental health and wellbeing of students
-- Pariksha Ka Pressure Cooker- Immense stress and burnoutare causing serious mental health challenges in the youth
+- Pariksha Ka Pressure Cooker- Immense stress and burnout are causing serious mental health challenges in the youth
 - Mujse Baat Karo: Counsellors call for suicide prevention and early assessment can protect the lives of the young. 
 - Number ka naam zindagi Nahi Hain: Learning is important and not just merely scoring in exams.
 

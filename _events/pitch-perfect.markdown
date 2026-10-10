@@ -12,7 +12,7 @@ time_of_event: 2:30 pm to 3:30 pm
 venue: German Lab (Aidos Block)
 
 participants: Max 3 per school / college
-description: UUnleash your entrepreneurial mind in Pitch Perfect, a platform to present creative and enterprising business ideas that will promote mental health awareness, healing, and personal growth. Teams will have to create PowerPoint presentations on innovative proposals on the topics mentioned below. Each team will get seven to ten minutes to present their creative ideas to the judges.
+description: Unleash your entrepreneurial mind in Pitch Perfect, a platform to present creative and enterprising business ideas that will promote mental health awareness, healing, and personal growth. Teams will have to create PowerPoint presentations on innovative proposals on the topics mentioned below. Each team will get seven to ten minutes to present their creative ideas to the judges.
 
 registration_link:  /reg_details/
 ---

@@ -27,10 +27,10 @@ registration_link: /reg_details/
 - Confidence begins with self acceptance
 - Not perfect, just growing
 - Kindness begins with me
-- Mark's don't define my worth
+- Marks don't define my worth
 - Comparison is a thief of joy
 - Not every race needs to be run
-- In a world full of filters be real
+- In a world full of filters, be real
 - Gratitude changes attitude
 - Empathy is the super power we all need 
 

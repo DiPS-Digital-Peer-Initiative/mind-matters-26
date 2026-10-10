@@ -1,5 +1,5 @@
 <head>
-	<link href="http://gmpg.org/xfn/11" rel="profile">
+	<link href="https://gmpg.org/xfn/11" rel="profile">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
    
@@ -25,13 +25,19 @@
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
 
 	<!-- Icons -->
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}public/apple-touch-icon-144-precomposed.png">
-	<link rel="icon" type="image/png" href="{{ '/media/MM24-C.png' | relative_url }}">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/_media/branding/MM-C.png' | relative_url }}">
+	<link rel="icon" type="image/png" href="{{ '/_media/branding/MM-C.png' | relative_url }}">
    
 	<!--  Emoji! -->
-	<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+	<script src="{{ '/_media/js/twemoji.min.js' | relative_url }}"></script>
 	<script>
-		window.onload = function() {twemoji.parse(document.body, {folder: 'svg', ext: '.svg'});}
+		window.onload = function() {
+			twemoji.parse(document.body, {
+				base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/',
+				folder: 'svg',
+				ext: '.svg'
+			});
+		}
 	</script>
 	<style>
 		img.emoji {

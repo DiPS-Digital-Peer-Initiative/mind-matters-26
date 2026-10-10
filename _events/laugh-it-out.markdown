@@ -20,9 +20,9 @@ registration_link:  /reg_details/
 ## Topics
 - The glorious failures of social media
 - The unspoken rules of public transport
-- The quirks of family gatherings: Love , Laughter and Passive aggression
-- The reliability of "Fake it till you make it (academically speaking)
-- The absurdity of our post-pandemic habits : The new 'normal'
+- The quirks of family gatherings: Love, Laughter and Passive aggression
+- The reliability of "Fake it till you make it" (academically speaking)
+- The absurdity of our post-pandemic habits: The new 'normal'
 - The unspoken rules of supermarket shopping: An epic quest for groceries
 - The mundane horrors of bureaucracy and customer service
 - Our obsession with 'convenience' ( and how it makes things harder)

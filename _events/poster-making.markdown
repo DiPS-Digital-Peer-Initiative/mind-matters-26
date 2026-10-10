@@ -12,7 +12,7 @@ time_of_event: 10:30am to 11:30am
 venue: AV Room, Aidos Block
 
 participants: 2 per school / college
-description: UTOPIA is a poster-making competition that invites participants to creatively explore and promote critical themes surrounding mental health. Through visual expression, students will raise awareness, challenge societal taboos, and share positive messages related to emotional well-being, resilience, communication,and inclusion. The event aims to encourage thoughtful reflection and advocacy through art.
+description: UTOPIA is a poster-making competition that invites participants to creatively explore and promote critical themes surrounding mental health. Through visual expression, students will raise awareness, challenge societal taboos, and share positive messages related to emotional well-being, resilience, communication, and inclusion. The event aims to encourage thoughtful reflection and advocacy through art.
 
 registration_link: /reg_details/
 ---

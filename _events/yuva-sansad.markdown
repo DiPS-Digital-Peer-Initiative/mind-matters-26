@@ -39,11 +39,11 @@ registration_link:  /reg_details/
 
 ## Rules and Regulations
 - There are 5 ministries present. They are -
-	- Ministry of Woman and Child Development 
+	- Ministry of Women and Child Development 
 	- Ministry of Health and Family Welfare 
 	- Ministry of Information and Broadcasting
 	- Ministry of Education
-	- Ministry of Social Justice and Woman Empowerment 
+	- Ministry of Social Justice and Women Empowerment 
 - Participants must research all ten topics to find policies and implementations of the same in accordance with the five ministries.
 - Eligibility Criteria: Students of classes IX,X,XI, XII, and 1st year and 2nd year students can register.
 - The participants must bring their research along with them. 

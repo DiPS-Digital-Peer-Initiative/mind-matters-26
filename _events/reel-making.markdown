@@ -4,7 +4,7 @@ banner_image: /_media/reel2024.jpeg
 
 name: Reel Making
 
-fee: Please check the brochure on the Registration Registration Details page
+fee: Please check the brochure on the Registration Details page
 
 deadline_date: 5th October 2025
 

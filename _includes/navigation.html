@@ -14,7 +14,7 @@
 			{% for item in site.data.navigation.items %}
 				{% assign current_clean = page.url | remove: "/" | remove: ".html" %}
 				{% assign item_clean = item.link | remove: "/" | remove: ".html" %}
-				<a href="{{ site.baseurl }}{{ item.link }}" {% if current_clean == item_clean and item_clean != "" %}style="opacity: 1; font-weight: bold;"{% endif %}>
+				<a href="{{ site.baseurl }}{{ item.link }}" {% if current_clean contains item_clean and item_clean != "" %}style="opacity: 1; font-weight: bold;"{% endif %}>
 					{{ item.name }}
 				</a>
 			{% endfor %}

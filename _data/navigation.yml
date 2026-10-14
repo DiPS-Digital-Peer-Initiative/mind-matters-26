@@ -7,11 +7,8 @@ items:
     link: /events
 
     
-  - name: 2024
-    link: /2024    
-
-  - name: 2023
-    link: /2023
+  - name: Retrospective
+    link: /retrospective
         
   - name: Contact
     link: /contact

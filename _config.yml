@@ -39,6 +39,9 @@ collections:
   events:
     output: true
     future: true
+  retrospectives:
+    output: true
+    future: true
   workshops:
     output: false
     future: true

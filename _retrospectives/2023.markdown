@@ -4,7 +4,7 @@ title: Mind Matters 2023 -- A Retrospective
 year: 2023
 edition: Inaugural Edition
 date_of_event: 7th & 8th October 2023
-banner_image: /_media/2023-1.jpeg
+banner_image: /_media/2023-10.jpeg
 description: The inaugural edition of the Young Adolescent Peer Educator's Leadership Conclave, founded under the guidance of Master Peer Educators of DPS Bangalore South to promote youth mental health awareness.
 permalink: /retrospective/2023/
 ---

@@ -15,6 +15,9 @@ participants: 3 members per team
 description: Step into the fascinating world of the human mind! The Mentalist is an engaging psychology-based challenge exploring psychological concepts, human behaviour, mental health, emotions, and perception. Decode clues inspired by psychological theories, famous studies, and popular culture to test how well you observe, connect, and think like a psychologist.
 
 registration_link: /reg_details/
+
+category: Psychology & Research
+tags: the mentalist, psychology, clues, mystery, mind, cognition, perception, analysis, puzzle, behavior, mental health, theories
 ---
 
 Step into the fascinating world of the human mind! **The Mentalist** is an engaging, psychology-based experience that challenges participants to explore psychological concepts, human behaviour, mental health, emotions, personality, cognition, and perception.

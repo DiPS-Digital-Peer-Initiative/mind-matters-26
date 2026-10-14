@@ -15,6 +15,9 @@ participants: Team of 2 members per school / college / delegation
 description: Behaviour Scientist is a platform for young minds to step into the fascinating world of psychological and behavioural research. It encourages students to move beyond textbooks, ask meaningful questions, explore real-world behaviour, and present their findings using the principles of scientific research.
 
 registration_link: /reg_details/
+
+category: Psychology & Research
+tags: behaviour scientists, research, paper, poster, APA, psychology, science, study, symposium, young researcher, explorer
 ---
 
 **Behaviour Scientists** is a platform for young minds to step into the fascinating world of psychological and behavioural research. It encourages students to move beyond textbooks, ask meaningful questions, explore real-world behaviour, and present their findings using the rigorous principles of scientific research.

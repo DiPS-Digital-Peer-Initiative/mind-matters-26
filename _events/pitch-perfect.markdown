@@ -15,6 +15,9 @@ participants: Two teams with up to 3 participants each per school / college / de
 description: Unleash your entrepreneurial mind in Pitch Perfect, a platform to present creative and enterprising business ideas that promote mental health awareness, healing, and personal growth. Teams create presentations pitching innovative proposals to a panel of judges.
 
 registration_link: /reg_details/
+
+category: Speaking & Debate
+tags: pitch perfect, pitch, entrepreneurship, business, startup, presentation, ppt, slides, idea, model, innovate, proposals
 ---
 
 Unleash your entrepreneurial mind in **Pitch Perfect**, a platform to present creative and enterprising business ideas that promote mental health awareness, healing, and personal growth. Teams will create presentations proposing innovative models and solutions, pitching their ventures directly to our panel of judges.

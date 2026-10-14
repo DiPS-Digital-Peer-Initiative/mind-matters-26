@@ -15,6 +15,9 @@ participants: Solo (maximum 2 individual participants per school / college / del
 description: Manakaavya is a poetry writing event that invites participants to transform thoughts into verse, exploring the many facets of the human mind. Through topics centred on mental health, participants weave together emotions, experiences, and perspectives to create powerful pieces that inspire reflection, understanding, and awareness.
 
 registration_link: /reg_details/
+
+category: Visual Arts & Media
+tags: manakaavya, poetry, poem, writing, verse, literature, creative, poet, verse, words, thoughts, human mind
 ---
 
 **Manakaavya** is a poetry writing competition that invites participants to transform thoughts into verse, exploring the many facets of the human mind and emotional landscape. Through topics centred on mental health, participants weave together raw emotions, personal reflections, and diverse perspectives to create evocative poetry that inspires understanding and awareness.

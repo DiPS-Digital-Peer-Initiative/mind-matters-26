@@ -15,6 +15,9 @@ participants: Group of 8 to 10 participants per school / college / delegation
 description: A street-play competition that dramatizes pressing mental-health themes—resilience, stigma, and academic stress—using powerful storytelling, performance, and audience engagement to drive social awareness.
 
 registration_link: /reg_details/
+
+category: Performing Arts
+tags: nukkad natak, street play, drama, theatre, acting, skit, hindi, kannada, english, performance, props, musical instruments
 ---
 
 **Nukkad Natak** is a street-play competition that dramatizes pressing mental-health themes—resilience, stigma, academic stress, and emotional vulnerability—using powerful storytelling, high-energy performance, and direct audience engagement to drive social awareness.

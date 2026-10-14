@@ -15,6 +15,9 @@ participants: Maximum 5 participants per school / college / delegation
 description: A parliamentary debate simulation in which participants, assigned one of ten ministries, analyse policies on a critical social topic—”The Mental Health Bill, 2026"—within a structured, time-bound format that emphasises research, rebuttal, and policy critique.
 
 registration_link: /reg_details/
+
+category: Speaking & Debate
+tags: yuva sansad, parliament, debate, policy, bill, law, speech, discussion, politics, mock, youth, ministers, government
 ---
 
 ## Ministries

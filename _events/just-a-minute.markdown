@@ -15,6 +15,9 @@ participants: Solo (maximum 2 participants per school / college / delegation)
 description: An impromptu-speaking challenge where each participant delivers a compelling, continuous talk on a topic related to mental health, judged on spontaneity, fluency, and content under real-time pressure.
 
 registration_link: /reg_details/
+
+category: Speaking & Debate
+tags: jam, just a minute, speaking, speech, impromptu, buzzer, english, hesitation, oratory, talk, continuous, challenge
 ---
 
 **JAM (Just a Minute)** is an impromptu-speaking challenge where each participant delivers a compelling, continuous talk on a topic related to mental health, judged based on spontaneity, articulation, and presence of mind.

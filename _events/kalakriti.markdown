@@ -15,6 +15,9 @@ participants: Solo (maximum 2 participants per school / college / delegation)
 description: KALAKRITI is a poster-making competition that invites participants to creatively explore and promote critical themes surrounding mental health. Through visual expression, students will raise awareness, challenge societal taboos, and share positive messages related to emotional well-being, resilience, communication, and inclusion.
 
 registration_link: /reg_details/
+
+category: Visual Arts & Media
+tags: kalakriti, art, poster, poster making, painting, drawing, sheet, creativity, visual, colors, advocacy, A3, taboos
 ---
 
 **KALAKRITI** is a poster-making competition that invites participants to creatively explore and promote critical themes surrounding mental health. Through visual expression, students will raise awareness, challenge societal taboos, and share positive messages related to emotional well-being, resilience, communication, and inclusion. The event aims to encourage thoughtful reflection and advocacy through art.

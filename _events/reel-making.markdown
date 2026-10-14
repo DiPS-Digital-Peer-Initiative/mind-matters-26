@@ -15,6 +15,9 @@ participants: Solo or group of 2 participants per school / college / delegation
 description: A short-video competition where participants craft 30–60-second reels centered on topics related to mental health, demonstrating storytelling flair, visual innovation, and accessibility, with an emphasis on positive, constructive messaging.
 
 registration_link: /reg_details/
+
+category: Visual Arts & Media
+tags: reel making, reel, video, short film, online, media, digital, instagram, filming, 30-60 seconds, submission, reels
 ---
 
 **Reel Making** is a short-video competition where participants craft 30–60-second reels centered on topics related to mental health, demonstrating storytelling flair, visual innovation, and accessibility, with an emphasis on positive, constructive messaging.

@@ -15,6 +15,9 @@ participants: Solo or a group of 4–8 participants max per school / college / d
 description: An Indian classical dance competition conveying social messages and emotional narratives—ranging from empowerment to trauma recovery—through traditional abhinaya, choreography, and musicality.
 
 registration_link: /reg_details/
+
+category: Performing Arts
+tags: natyalaya, dance, classical, bharatanatyam, kathak, odissi, kuchipudi, music, performance, choreography, movement, anxiety, rhythm
 ---
 
 **Natyalaya** is an Indian classical dance competition conveying social messages and emotional narratives—ranging from empowerment to trauma recovery—through traditional abhinaya, choreography, and musicality.

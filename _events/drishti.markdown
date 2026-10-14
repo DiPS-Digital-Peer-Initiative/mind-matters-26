@@ -15,6 +15,9 @@ participants: Solo or 2 participants per school / college / delegation
 description: Drishti is a photography event that encourages participants to visually depict issues surrounding mental health. Incorporating complex emotions and experiences, participants capture moments that are hard to put into words, advocating for emotional challenges through the medium of visual art.
 
 registration_link: /reg_details/
+
+category: Visual Arts & Media
+tags: drishti, photography, photo, camera, visual, storytelling, picture, backpack, mask, burnout, depression, model, photos
 ---
 
 **Drishti** is a photography event that encourages participants to visually depict issues surrounding mental health. Incorporating complex emotions and experiences, the event invites students to capture moments that are hard to put into words, using the camera lens to advocate for well-being and explore the challenges young people face.

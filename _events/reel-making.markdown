@@ -1,6 +1,6 @@
 ---
 layout: event
-banner_image: /_media/reel2024.jpeg
+banner_image: /_media/2025-9.jpeg
 
 name: Reel Making
 

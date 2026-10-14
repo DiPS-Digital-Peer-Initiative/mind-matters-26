@@ -1,6 +1,6 @@
 ---
 layout: event
-banner_image: /_media/nn2024.jpeg
+banner_image: /_media/2025-10.jpeg
 
 name: Nukkad Natak
 

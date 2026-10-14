@@ -1,6 +1,6 @@
 ---
 layout: event
-banner_image: /_media/poster.jpg
+banner_image: /_media/2025-3.jpeg
 
 name: Kalakriti - Poster Making
 

@@ -1,6 +1,6 @@
 ---
 layout: event
-banner_image: /_media/pp.jpeg
+banner_image: /_media/2025-6.jpeg
 
 name: Pitch Perfect
 

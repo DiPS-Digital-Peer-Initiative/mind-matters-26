@@ -1,6 +1,6 @@
 ---
 layout: event
-banner_image: /_media/jam.jpg
+banner_image: /_media/2025-11.jpeg
 
 name: JAM - Just A Minute
 

@@ -1,6 +1,6 @@
 ---
 layout: event
-banner_image: /_media/BS.jpeg
+banner_image: /_media/2025-2.jpeg
 
 name: Behaviour Scientists - Research Symposium
 

@@ -1,6 +1,6 @@
 ---
 layout: event
-banner_image: /_media/event_placeholder.jpg
+banner_image: /_media/2025-4.jpeg
 
 name: The Mentalist
 

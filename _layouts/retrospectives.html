@@ -11,7 +11,22 @@
 
 				<!-- Retrospectives Cards Container -->
 				<div id="events-container">
-					{% assign retros = site.retrospectives | sort: 'year' | reverse %}
+					{% assign retros = site.retrospectives %}
+					{% if retros and retros.size > 0 %}
+						{% assign retros = retros | sort: 'year' | reverse %}
+					{% else %}
+						{% assign retros = site.documents | where: "collection", "retrospectives" %}
+						{% if retros and retros.size > 0 %}
+							{% assign retros = retros | sort: 'year' | reverse %}
+						{% else %}
+							{% assign retros = site.pages | where_exp: "item", "item.url contains '/retrospective/' and item.url != '/retrospective/'" %}
+							{% if retros and retros.size > 0 %}
+								{% assign retros = retros | sort: 'year' | reverse %}
+							{% else %}
+								{% assign retros = "" | split: "" %}
+							{% endif %}
+						{% endif %}
+					{% endif %}
 					{% for retro in retros %}
 						<a href="{{ retro.url }}" class="event-container-link">
 							<div class="event-container">

@@ -19,6 +19,10 @@ The fashion show we organised was specifically showcasing the different challeng
 
 The combination of competition, celebration, and live music made the Mind Matters Conclave a memorable event, reinforcing the importance of mental health in an engaging and uplifting manner.
 
+<div class="separator"></div>
+
+## Highlights & Memories
+
 <div class="photo-grid">
 	<img src="/_media/2024-1.jpeg" alt="Mind Matters 2024" loading="lazy">
 	<img src="/_media/2024-2.jpeg" alt="Mind Matters 2024" loading="lazy">

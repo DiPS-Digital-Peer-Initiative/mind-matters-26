@@ -60,6 +60,15 @@ exclude:
   - netlify.toml
   - .ruby-version
   - vendor/
+  - _media/brochure_2025.pdf
+  - _media/brochure.pdf
+  - _media/schedule_2025.pdf
+  - _media/external_S.pdf
+  - _media/parent_workshop.pdf
+  - _media/poster.pdf
+  - _media/poster_2025.jpeg
+  - _media/branding/DPS-26.jpg
+  - _media/branding/MM-26.jpeg
 
 include:
   - _media

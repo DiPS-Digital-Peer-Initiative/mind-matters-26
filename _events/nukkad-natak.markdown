@@ -6,46 +6,29 @@ name: Nukkad Natak
 
 fee: Please check the brochure on the Registration Details page
 
-date_of_event: 10th October 2025 (Day 1)
-time_of_event: 10:30 am to 12:30 pm
+date_of_event: 31st October 2026
+time_of_event: Will be announced on the day of the event
 
-venue: Amphitheatre, Elios Block
+venue: Will be announced on the day of the event
 
-participants: 8 per school / college
-description: A street-play competition that dramatises pressing mental-health themes—resilience,stigma, cyberbullying, academic stress—using powerful storytelling, performance, and audience engagement to drive social awareness
+participants: Group of 8 to 10 participants per school / college / delegation
+description: A street-play competition that dramatizes pressing mental-health themes—resilience, stigma, and academic stress—using powerful storytelling, performance, and audience engagement to drive social awareness.
 
-registration_link:  /reg_details/
+registration_link: /reg_details/
 ---
 
+**Nukkad Natak** is a street-play competition that dramatizes pressing mental-health themes—resilience, stigma, academic stress, and emotional vulnerability—using powerful storytelling, high-energy performance, and direct audience engagement to drive social awareness.
+
 ## Topics
-
-- Mann Ki Baat: Seeking Help is a strength and not a weakness
-- Ek Mukhota Muskaan Ka: Smiling through sadness-the hidden struggles behind happy faces.
-- Waqt Par Pehchaan: Awareness of anxiety and depression in teenagers can prevent a crisis.
-- Soch Badlo, Samaaj Badlega- Gender discrimination and its toll on mental health
-- Digital Duniya Ka Aks: Social Media addiction and cyberbullying effect on mental health and wellbeing of students
-- Pariksha Ka Pressure Cooker- Immense stress and burnout are causing serious mental health challenges in the youth
-- Mujse Baat Karo: Counsellors call for suicide prevention and early assessment can protect the lives of the young. 
-- Number ka naam zindagi Nahi Hain: Learning is important and not just merely scoring in exams.
-
+- **Chehre Par Muskaan, Mann Mai Tufaan:** Smiling through sadness—the hidden struggles behind happy faces.
+- **Nai Disha, Nai Soch:** Gender discrimination and its toll on mental health.
+- **Tum Akele Nahi Ho:** Counselors' call for suicide prevention and how early intervention can protect young lives.
 
 ## Rules and Regulations
-
-- Eligibility Criteria: Students of classes VIII,IX,X,XI, XII, along with 1st and 2nd-year college students, can register.
-- It can be enacted in any language. However, the narrative is to be explained to the judges and audience in English before the enactment.
-- The duration of this competition is 5-7 minutes, considering only the constraint of time.
-- Students will have very limited time to get ready for the competition and are expected to be ready with paraphernalia before 9:45 am.
-- The first warning bell will be sounded after five minutes, and the final bell after seven minutes.
-- If the team takes more time than permitted, there will be negative marking.
-- Use of foul/obscene language of any kind is prohibited.
-- Students need to carry their own props for this competition, and they need to be handmade.
-- Musical instruments can be carried by respective schools for this competition.
-
-## Judgment Criteria
-
-- Relevance to the given topic.
-- The narrator’s introduction to the story.
-- Script and dialogue of the play.
-- The actors’ performances, body language, and clarity of dialogue will be assessed.
-- Creativity and originality of the story will be assessed.
-- Audience engagement will be assessed.
+- **Eligibility Criteria:** Students of classes VIII, IX, X, XI, and XII can register.
+- **Team Size:** A group of maximum 8 to 10 participants per school / college / delegation.
+- **Languages Allowed:** Performances can be enacted in English, Kannada, or Hindi. However, a brief synopsis/narrative must be introduced to the judges and audience in English before the enactment begins.
+- **Duration:** The duration of the play must be between 7 and 10 minutes. Time limits will be strictly monitored.
+- **Props:** Teams must carry their own props. All props must be handmade; excessive or commercial sets are not permitted.
+- **Music & Sound:** Live musical instruments (e.g., dholak, dafli, acoustic instruments) can be carried and played by the participants. Pre-recorded audio is not permitted.
+- **Decorum:** The use of any foul, vulgar, or obscene language/gestures is strictly prohibited and will lead to immediate disqualification.

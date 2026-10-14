@@ -6,44 +6,26 @@ name: JAM - Just A Minute
 
 fee: Please check the brochure on the Registration Details page
 
-date_of_event: 11th October 2025 (Day 2)
-time_of_event: 10:30am to 11:30am
+date_of_event: 30th October 2026
+time_of_event: Will be announced on the day of the event
 
-venue: German Lab, Aidos Block, 2nd Floor
+venue: Will be announced on the day of the event
 
-participants: 2 per school / college
-description: An impromptu speaking challenge where each participant delivers a compelling, continuous one-minute talk on a surprise mental health theme, judged on spontaneity, coherence, and content under real-time pressure.
+participants: Solo (maximum 2 participants per school / college / delegation)
+description: An impromptu-speaking challenge where each participant delivers a compelling, continuous talk on a topic related to mental health, judged on spontaneity, fluency, and content under real-time pressure.
 
 registration_link: /reg_details/
 ---
 
-## Topics
-- A strong mind is not the one without tears
-- Mental health is wealth too
-- Talking helps more than you think
-- Its okay not to be okay
-- The power of a pause
-- I am my own biggest cheerleader
-- Confidence begins with self acceptance
-- Not perfect, just growing
-- Kindness begins with me
-- Marks don't define my worth
-- Comparison is a thief of joy
-- Not every race needs to be run
-- In a world full of filters, be real
-- Gratitude changes attitude
-- Empathy is the super power we all need 
+**JAM (Just a Minute)** is an impromptu-speaking challenge where each participant delivers a compelling, continuous talk on a topic related to mental health, judged based on spontaneity, articulation, and presence of mind.
 
 ## Rules and Regulations
-
-- Eligibility Criteria: Students of classes VIII,IX,X,XI, XII, along with 1st and 2nd year students, can register.
-- Each participant will be given a topic from the topics mentioned above.
-- Each participant will be given a minute to speak on the topic.
-- Medium of speech will be English.
-- Participants must speak continuously without long pauses or hesitation.
-- Hesitation or momentary pauses can open the floor to challenges.
-- The participant must avoid repeating the same words or phrases during the one-minute talk.
-- Other participants can challenge the speaker if they believe there was hesitation, repetition, or deviation. They can say "Just a minute!" and explain the issue.
-- The buzzer will be pressed twice, once when 45 seconds have passed and the final time at the end of a minute.
-- The participants will be judged on spontaneity, method, content, and fluency.
-- Usage of foul language will lead to disqualification.
+- **Eligibility Criteria:** Students of classes VIII, IX, X, XI, and XII, along with 1st and 2nd year PU / college students, can register.
+- **Participation:** Solo entries only (maximum 2 participants per institution / delegation).
+- **Format:** Each participant will be given a minute to speak on a mental health topic.
+- **Language:** The medium of speech is English.
+- **Continuity:** Participants must speak continuously without long pauses, repetition, or hesitation.
+- **Challenges:** Hesitation, repetition, or deviation opens the floor to challenges. Other participants can challenge the current speaker by saying *"Just a minute!"* and stating the reason.
+- **Buzzer Timings:** The buzzer will sound twice: once at 45 seconds as a warning, and a final buzzer at 60 seconds (1 minute).
+- **Judging Criteria:** Spontaneity, relevance to the mental health theme, fluency, and clarity of thought.
+- **Code of Conduct:** Usage of any foul or inappropriate language will lead to immediate disqualification.

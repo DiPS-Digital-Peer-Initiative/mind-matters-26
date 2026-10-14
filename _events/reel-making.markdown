@@ -6,45 +6,33 @@ name: Reel Making
 
 fee: Please check the brochure on the Registration Details page
 
-deadline_date: 5th October 2025
+deadline_date: 24th October 2026 (Saturday), 6:00 PM
 
 venue: Online Submission
 
-participants: 4 - 5 per school / college
+participants: Solo or group of 2 participants per school / college / delegation
 
-description: A short-video competition where participants craft 30–60-second reels centred on a mental health topic, demonstrating storytelling flair, visual innovation, and accessibility, with an emphasis on positive, constructive messaging.
+description: A short-video competition where participants craft 30–60-second reels centered on topics related to mental health, demonstrating storytelling flair, visual innovation, and accessibility, with an emphasis on positive, constructive messaging.
 
 registration_link: /reg_details/
 ---
 
-## Topics
-- Busting myths and facts about mental health.
-- Unspoken battles - A silent reel showing the struggles of a student.
-- Dear Anxiety - A letter or a monologue describing the struggles of a student facing anxiety in her or his life.
-- If my thoughts had a voice - creative inner dialogue about one’s opinion of the various challenges that he or she wants to share with people around.
-- From breakdown to breakthrough - a transformation all in a minute. 
-- One compliment can save a day ( a reel showing the power of kind words).
-Note:- The first four award winners will be able to showcase their reels during award ceremony.
+**Reel Making** is a short-video competition where participants craft 30–60-second reels centered on topics related to mental health, demonstrating storytelling flair, visual innovation, and accessibility, with an emphasis on positive, constructive messaging.
+
+Through concise and compelling visual narratives, participants will bring critical mental health conversations to the forefront, challenging stigma and spreading hope.
 
 ## Rules and Regulations
-- Eligibility Criteria: Students of classes VIII,IX,X,XI, XII, along with 1st and 2nd year students, can register.
-- Participants can enter individually (the number of actors is optional).
-- Content must be respectful, informative, and aimed at promoting mental well-being.
-- All content must be original. Plagiarism will result in disqualification.
-- Proper citations must be provided for any referenced material.
-- Reels must be in English.
-- Reels must be submitted to dpspeereducators24@gmail.com with the participant’s school name, class, email address and phone number.
-- Late submissions will not be accepted.
-
-
-## Video Guidelines
-- Each video should focus on any one of the given topics.
-- Suitable music should be used.
-- Videos must be between 30 to 60 seconds in length.
-- Creativity in storytelling and use of visual elements is encouraged to engage the audience within the short format.
-- Original content focusing on positive and constructive messages about mental health.
-- Avoidance of language or imagery that may be triggering or offensive to individuals experiencing mental health challenges.
-- Subtitles or closed captions must be included in the video for accessibility.
-- Visual content should be clear and easy to understand.
-- Deadline for video submissions is 5th October 2025 in dpspeereducators24@gmail.com
-- For any details, please connect with Mrs. Swati Banerjee (9945217954)
+- **Eligibility Criteria:** Students of classes VIII, IX, X, XI, and XII can register.
+- **Participation:** Participants can enter individually (solo) or as a group of 2 participants per school / college / delegation.
+- **Duration:** Reels must be between 30 to 60 seconds in length.
+- **Language:** Reels must be in English.
+- **Content & Theme:** Content must be respectful, informative, and aimed at promoting mental well-being and positive, constructive messaging.
+- **Originality:** All content must be original. Plagiarism of any kind will result in immediate disqualification.
+- **Citations:** Proper citations must be provided for any referenced material or statistics.
+- **Submission Mode:** Reels must be submitted via email to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#112;&#115;&#112;&#101;&#101;&#114;&#101;&#100;&#117;&#99;&#97;&#116;&#111;&#114;&#115;&#50;&#52;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#100;&#112;&#115;&#112;&#101;&#101;&#114;&#101;&#100;&#117;&#99;&#97;&#116;&#111;&#114;&#115;&#50;&#52;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>.
+- **Required Submission Details:** Each submission email must include:
+  - Participant name(s)
+  - School / Delegation name
+  - Class / Grade
+  - Contact email address and phone number
+- **Deadline:** Submissions must be received by **October 24th, 2026 (Saturday) at 6:00 PM**. Late submissions will not be accepted.

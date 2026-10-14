@@ -6,49 +6,30 @@ name: Natyalaya
 
 fee: Please check the brochure on the Registration Details page
 
-date_of_event: 10th October 2025 (Day 1)
-time_of_event: 10:30 am to 12:30 pm
+date_of_event: 30th October 2026
+time_of_event: Will be announced on the day of the event
 
-venue: Auditorium (BIA Block)
+venue: Will be announced on the day of the event
 
-participants: Maximum 3 students per school (Solo Performances only)
+participants: Solo or a group of 4–8 participants max per school / college / delegation
+description: An Indian classical dance competition conveying social messages and emotional narratives—ranging from empowerment to trauma recovery—through traditional abhinaya, choreography, and musicality.
 
-description: An Indian classical dance competition conveying social messages and emotional narratives—ranging from empowerment to trauma recovery— through traditional abhinaya, choreography, and musicality.
-
-registration_link:  /reg_details/
+registration_link: /reg_details/
 ---
 
-## Topics
-- Awaaz – Dance as a Voice
-    - Concept: Dance with a social message
-    - Presentation: Performances centred around themes like women’s empowerment, environmental awareness, and unity in diversity.
-    - Message: Dance becomes a voice for the voiceless, amplifying social causes through expressive movement.
-- Saaz Aur Awaaz
-    - Concept: Instruments in Dance
-    - Presentation: Each performance is inspired by a traditional Indian instrument, interpreting its sound and essence through choreography.
-    - Message: Showcasing how music and movement together can tell compelling stories and evoke deep emotional responses.
-- Spandan – The Heartbeat of Emotions
-    - Concept: Expressing the navarasas (nine emotions) through dance.
-    - Presentation: Each act embodies a rasa — from love and joy to anger and fear — using abhinaya and expressive choreography.
-    - Message: Celebrating the full spectrum of human emotions and how they shape our inner worlds.
-- Shakti – The Power Within
-    - Concept: Rediscovering self-worth and mental strength.
-    - Presentation: Dance pieces celebrating Devi (Durga/Kali) as inner resilience.
-    - Message: “Self-love and inner power."
-- Nirbhaya – Breaking the Silence
-    - Concept: Mental health issues faced by survivors of trauma or abuse.
-    - Presentation: Expressive abhinaya to portray pain, fear, and eventual empowerment.
-    - Message: “Healing and reclaiming agency."
-- Sakhi (The Confidante)
-    - Concept: A friend comforting someone with mental distress.
-    - Presentation: Classical narrative format showing support, empathy, and listening.
-    - Message: “Power of human connection and support systems."
+**Natyalaya** is an Indian classical dance competition conveying social messages and emotional narratives—ranging from empowerment to trauma recovery—through traditional abhinaya, choreography, and musicality.
 
+## Topics
+- **Anxiety to Calm:** Translating high movement steps to slow, calm, grounded & rhythmic movements.
+- **Embracing Imperfection:** Choreograph moments of intentional awkwardness or stumbling that smoothly transition into recovery and self-acceptance.
+- **Surrendering the Weight:** A piece centred on the physical act of dropping burdens to find peace.
+- **The Mask We Wear:** Exploring societal expectations vs authentic emotional expression through contrasting facial expressions and rigid vs fluid movements.
+- **Echoes of Loneliness:** Interacting with an empty spotlight or a specific prop (like a chair) to highlight the physical absence of a support system.
 
 ## Rules and Regulations
-- Eligibility Criteria: Students of classes VIII,IX,X,XI, XII, along with 1st and 2nd year students, can register.
-- Dance Form: Only Indian classical dance forms are allowed (e.g.Bharatanatyam, Kathak, Odissi, Kuchipudi, etc.).
-- Time Limit: Each performance must be between five to seven minutes. Exceeding the time limit will lead to deduction of marks.
-- Music: Only pre-recorded music is allowed. Participants must bring their music on a pen drive in MP3 format. All music needs to be submitted to email id dpspeereducators24@gmail.com by 5th October 2025. Kindly mention the school name.
-- Solo Participation: Only solo performances are permitted. (There can be three participants from each school.)
-- Originality: Choreography must be original or traditional. Imitation of film-based or non-classical steps will result in disqualification.
+- **Eligibility Criteria:** Students of classes VIII, IX, X, XI, and XII can register.
+- **Participation:** Solo or a group of 4 to 8 participants max per school/college/delegation.
+- **Dance Form:** Only Indian classical dance forms are allowed (e.g., Bharatanatyam, Kathak, Odissi, Kuchipudi, etc.).
+- **Time Limit:** Each performance must be between 5 to 7 minutes. Exceeding the time limit will lead to a deduction of marks.
+- **Music:** Only pre-recorded music is allowed. Participants must bring their track on a pen drive in MP3 format. Additionally, the music must be emailed to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#112;&#115;&#112;&#101;&#101;&#114;&#101;&#100;&#117;&#99;&#97;&#116;&#111;&#114;&#115;&#50;&#52;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#100;&#112;&#115;&#112;&#101;&#101;&#114;&#101;&#100;&#117;&#99;&#97;&#116;&#111;&#114;&#115;&#50;&#52;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a> by 22nd October with the school and event name clearly mentioned.
+- **Originality:** Choreography must be original and rooted in classical tradition. Imitation of film-based or non-classical Bollywood steps will result in immediate disqualification.

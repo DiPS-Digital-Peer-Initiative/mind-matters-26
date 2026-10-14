@@ -1,6 +1,6 @@
 ---
 layout: event
-banner_image: /_media/2023-5.jpeg
+banner_image: /_media/2025-5.jpeg
 
 name: Yuva Sansad
 

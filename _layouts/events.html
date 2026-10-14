@@ -7,94 +7,51 @@
 		
 		<main class="default-main">
 			<section class="limit-width">
-				<div class="events-header-row">
-					<h1 id="events">Events</h1>
-					<p class="events-subtitle">Explore the 11 inter-school competitions of Mind Matters 2026. Use the smart search bar, category filters, or switch to compact view to navigate quickly.</p>
-				</div>
+				<h1 id="events">Events</h1>
 
-				<!-- Interactive Controls Panel (Sticky Search & Filters) -->
-				<div class="events-controls-panel" id="events-controls">
-					<div class="events-search-bar-row">
-						<div class="search-input-wrapper">
-							<svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-								<circle cx="11" cy="11" r="8"></circle>
-								<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-							</svg>
-							<input 
-								type="search" 
-								id="events-search-input" 
-								class="events-search-input" 
-								placeholder="Search by name, topic, date, category, or keyword... (Press / to search)" 
-								autocomplete="off" 
-								spellcheck="false"
-								aria-label="Search events"
-							/>
-							<button type="button" id="events-clear-btn" class="events-clear-btn" aria-label="Clear search query" title="Clear search" style="display: none;">✕</button>
-							<span class="search-shortcut-hint" title="Press / to focus search"><kbd>/</kbd></span>
-						</div>
-
-						<div class="events-view-switcher" role="group" aria-label="Card view mode">
-							<button type="button" class="view-switch-btn active" id="view-mode-full" title="Full card view (Immersive)">
-								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-									<rect x="3" y="4" width="18" height="6" rx="2"></rect>
-									<rect x="3" y="14" width="18" height="6" rx="2"></rect>
-								</svg>
-								<span class="btn-label">Full</span>
-							</button>
-							<button type="button" class="view-switch-btn" id="view-mode-compact" title="Compact grid view (Drastically reduces scrolling)">
-								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-									<rect x="3" y="3" width="7" height="7" rx="1"></rect>
-									<rect x="14" y="3" width="7" height="7" rx="1"></rect>
-									<rect x="14" y="14" width="7" height="7" rx="1"></rect>
-									<rect x="3" y="14" width="7" height="7" rx="1"></rect>
-								</svg>
-								<span class="btn-label">Compact</span>
-							</button>
-						</div>
+				<!-- Simple, elegant search bar -->
+				<div class="events-search-bar">
+					<div class="search-input-wrapper">
+						<svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<circle cx="11" cy="11" r="8"></circle>
+							<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+						</svg>
+						<input 
+							type="search" 
+							id="events-search-input" 
+							class="events-search-input" 
+							placeholder="Search events by name, topic, or keyword..." 
+							autocomplete="off" 
+							spellcheck="false"
+							aria-label="Search events"
+						/>
+						<button type="button" id="events-clear-btn" class="events-clear-btn" aria-label="Clear search" title="Clear search" style="display: none;">✕</button>
 					</div>
 
-					<!-- Filter Pills -->
-					<div class="events-filter-scroll-wrapper">
-						<div class="events-filter-pills" id="events-filter-pills" role="tablist">
-							<button type="button" class="filter-pill active" data-filter="all">All Events</button>
-							<button type="button" class="filter-pill" data-filter="oct-30">Oct 30</button>
-							<button type="button" class="filter-pill" data-filter="oct-31">Oct 31</button>
-							<button type="button" class="filter-pill" data-filter="online">Online Submission</button>
-							<button type="button" class="filter-pill" data-filter="speaking">Speaking & Debate</button>
-							<button type="button" class="filter-pill" data-filter="performing">Performing Arts</button>
-							<button type="button" class="filter-pill" data-filter="visual">Visual Arts & Media</button>
-							<button type="button" class="filter-pill" data-filter="psychology">Psychology & Research</button>
-						</div>
-					</div>
-
-					<!-- Status line & reset button -->
-					<div class="events-status-row">
-						<div id="events-count-badge" class="events-count-badge">Showing all 11 events</div>
-						<button type="button" id="events-reset-btn" class="events-reset-btn" style="display: none;">Reset search & filters</button>
+					<div id="events-search-meta" class="events-search-meta" style="display: none;">
+						<span id="events-count-badge"></span>
+						<button type="button" id="events-reset-btn" class="events-reset-link">Clear search</button>
 					</div>
 				</div>
 
 				<!-- No Results State -->
 				<div id="events-no-results" class="events-no-results" style="display: none;">
-					<div class="no-results-icon">🔍</div>
 					<h2>No matching events found</h2>
-					<p>We couldn't find any events matching "<span id="no-results-query"></span>". Try searching for topics like <em>debate</em>, <em>dance</em>, <em>photography</em>, <em>poster</em>, or <em>psychology</em>.</p>
-					<button type="button" id="no-results-reset-btn" class="no-results-reset-btn">Show All Events</button>
+					<p>No events found matching "<span id="no-results-query"></span>".</p>
+					<button type="button" id="no-results-reset-btn" class="no-results-reset-btn">View All Events</button>
 				</div>
 
 				<!-- Events Cards Container -->
-				<div id="events-container" class="events-cards-container">
+				<div id="events-container">
 					{% for event in site.events %}
 						<a href="{{event.url}}" 
 						   class="event-container-link"
 						   data-name="{{ event.name | downcase | escape }}"
-						   data-category="{{ event.category | downcase | escape }}"
 						   data-tags="{{ event.tags | join: ' ' | downcase | escape }}"
 						   data-date="{% if event.deadline_date %}{{ event.deadline_date | downcase | escape }}{% else %}{{ event.date_of_event | downcase | escape }}{% endif %}"
 						   data-venue="{{ event.venue | downcase | escape }}"
 						   data-participants="{{ event.participants | downcase | escape }}"
 						   data-description="{{ event.description | downcase | escape }}"
-						   data-day="{% if event.deadline_date %}online{% elsif event.date_of_event contains '30' and event.date_of_event contains '31' %}oct-30 oct-31{% elsif event.date_of_event contains '30' %}oct-30{% elsif event.date_of_event contains '31' %}oct-31{% endif %}"
 						>
 							<div class="event-container">
 								<div class="bg" style="background-image: url('{{ event.banner_image }}');">
@@ -102,14 +59,11 @@
 								<div class="content-backing">
 								</div>
 								<div class="content">
-									{% if event.category %}
-										<span class="event-badge">{{ event.category }}</span>
-									{% endif %}
 									<h1>{{ event.name }}</h1>
 									<div class="description">{{ event.description }}</div>
 								
 
-									<div class="description meta-info" style="margin-top: 25px;">
+									<div class="description" style="margin-top: 25px;">
 										{% if event.deadline_date %}
 											<b>Deadline: {{event.deadline_date}}</b><br>
 										{% else %}
@@ -119,7 +73,7 @@
 										<b>Venue: {{event.venue}}</b><br>
 										<b>Fee: {{event.fee}}</b><br>
 									
-										<div class="view-cta" style="text-decoration: underline; margin-top: 25px">View Details ></div>
+										<div style="text-decoration: underline; margin-top: 25px">View ></div>
 									</div>
 								</div>
 							</div>
@@ -143,187 +97,89 @@
 				const clearBtn = document.getElementById("events-clear-btn");
 				const resetBtn = document.getElementById("events-reset-btn");
 				const noResultsResetBtn = document.getElementById("no-results-reset-btn");
+				const searchMeta = document.getElementById("events-search-meta");
 				const countBadge = document.getElementById("events-count-badge");
 				const noResultsBox = document.getElementById("events-no-results");
 				const noResultsQuery = document.getElementById("no-results-query");
 				const eventsContainer = document.getElementById("events-container");
 				const eventLinks = Array.from(document.querySelectorAll(".event-container-link"));
-				const filterPills = Array.from(document.querySelectorAll(".filter-pill"));
-				const viewFullBtn = document.getElementById("view-mode-full");
-				const viewCompactBtn = document.getElementById("view-mode-compact");
 				const backToTopBtn = document.getElementById("events-back-to-top");
 
 				const totalEvents = eventLinks.length;
 
-				// View Mode Toggle (Full vs Compact)
-				function setViewMode(mode, save = true) {
-					if (mode === 'compact') {
-						eventsContainer.classList.add('events-compact-view');
-						viewCompactBtn.classList.add('active');
-						viewFullBtn.classList.remove('active');
-						if (save) localStorage.setItem('mm_events_view', 'compact');
-					} else {
-						eventsContainer.classList.remove('events-compact-view');
-						viewFullBtn.classList.add('active');
-						viewCompactBtn.classList.remove('active');
-						if (save) localStorage.setItem('mm_events_view', 'full');
-					}
-				}
-
-				viewFullBtn.addEventListener('click', () => setViewMode('full'));
-				viewCompactBtn.addEventListener('click', () => setViewMode('compact'));
-
-				// Restore saved view mode preference
-				const savedView = localStorage.getItem('mm_events_view');
-				const urlParams = new URLSearchParams(window.location.search);
-				if (urlParams.get('view') === 'compact' || savedView === 'compact') {
-					setViewMode('compact', false);
-				}
-
-				// Filtering logic
 				function filterEvents() {
 					const query = (searchInput.value || "").trim().toLowerCase();
-					const activePill = document.querySelector(".filter-pill.active");
-					const filterType = activePill ? activePill.dataset.filter : "all";
-					
-					// Split search terms for multi-keyword matching
 					const terms = query.split(/\s+/).filter(t => t.length > 0);
+
+					// If no query, show the whole page normally
+					if (terms.length === 0) {
+						eventLinks.forEach(link => {
+							link.style.display = "";
+							link.classList.remove("is-even");
+						});
+						eventsContainer.classList.remove("is-filtered");
+						clearBtn.style.display = "none";
+						searchMeta.style.display = "none";
+						noResultsBox.style.display = "none";
+						return;
+					}
+
+					// When query exists, filter in real-time
+					clearBtn.style.display = "flex";
+					eventsContainer.classList.add("is-filtered");
+
 					let matchCount = 0;
 					let visibleIndex = 0;
 
 					eventLinks.forEach(link => {
 						const name = link.dataset.name || "";
-						const category = link.dataset.category || "";
 						const tags = link.dataset.tags || "";
 						const date = link.dataset.date || "";
 						const venue = link.dataset.venue || "";
 						const participants = link.dataset.participants || "";
 						const description = link.dataset.description || "";
-						const day = link.dataset.day || "";
 
-						const searchableText = (name + " " + category + " " + tags + " " + date + " " + venue + " " + participants + " " + description).toLowerCase();
+						const searchableText = (name + " " + tags + " " + date + " " + venue + " " + participants + " " + description).toLowerCase();
 
-						// 1. Category / Day Pill Filter
-						let pillMatch = true;
-						if (filterType === "oct-30") {
-							pillMatch = day.includes("oct-30");
-						} else if (filterType === "oct-31") {
-							pillMatch = day.includes("oct-31");
-						} else if (filterType === "online") {
-							pillMatch = day.includes("online");
-						} else if (filterType === "speaking") {
-							pillMatch = category.includes("speaking") || tags.includes("debate") || tags.includes("parliament");
-						} else if (filterType === "performing") {
-							pillMatch = category.includes("performing") || tags.includes("dance") || tags.includes("theatre");
-						} else if (filterType === "visual") {
-							pillMatch = category.includes("visual") || tags.includes("art") || tags.includes("photography") || tags.includes("reel");
-						} else if (filterType === "psychology") {
-							pillMatch = category.includes("psychology") || tags.includes("research") || tags.includes("mind");
-						}
+						const matches = terms.every(term => searchableText.includes(term));
 
-						// 2. Search Query Terms
-						let textMatch = true;
-						if (terms.length > 0) {
-							textMatch = terms.every(term => searchableText.includes(term));
-						}
-
-						// Display Decision
-						if (pillMatch && textMatch) {
+						if (matches) {
 							link.style.display = "";
-							link.classList.remove("is-hidden");
-							
-							// Dynamic alternating left/right layout for visible cards in Full View
 							if (visibleIndex % 2 === 1) {
 								link.classList.add("is-even");
 							} else {
 								link.classList.remove("is-even");
 							}
-
 							visibleIndex++;
 							matchCount++;
 						} else {
 							link.style.display = "none";
-							link.classList.add("is-hidden");
 							link.classList.remove("is-even");
 						}
 					});
 
-					// Update UI Elements
-					eventsContainer.classList.add("is-filtered");
-					clearBtn.style.display = query.length > 0 ? "flex" : "none";
-
 					if (matchCount === 0) {
 						noResultsBox.style.display = "block";
-						noResultsQuery.textContent = query || activePill.textContent;
-						countBadge.textContent = "0 events found";
-						resetBtn.style.display = "inline-block";
+						noResultsQuery.textContent = query;
+						searchMeta.style.display = "none";
 					} else {
 						noResultsBox.style.display = "none";
-						if (query.length > 0 || filterType !== "all") {
-							countBadge.textContent = "Showing " + matchCount + " of " + totalEvents + " events";
-							resetBtn.style.display = "inline-block";
-						} else {
-							countBadge.textContent = "Showing all " + totalEvents + " events";
-							resetBtn.style.display = "none";
-							eventsContainer.classList.remove("is-filtered");
-						}
+						searchMeta.style.display = "flex";
+						countBadge.textContent = "Showing " + matchCount + " of " + totalEvents + " events";
 					}
 				}
 
-				// Search Input Event
 				searchInput.addEventListener("input", filterEvents);
 
-				// Clear button event
-				clearBtn.addEventListener("click", function() {
+				function clearSearch() {
 					searchInput.value = "";
-					filterEvents();
-					searchInput.focus();
-				});
-
-				// Reset all filters
-				function resetAll() {
-					searchInput.value = "";
-					filterPills.forEach(p => p.classList.remove("active"));
-					const allPill = document.querySelector('.filter-pill[data-filter="all"]');
-					if (allPill) allPill.classList.add("active");
 					filterEvents();
 					searchInput.focus();
 				}
 
-				resetBtn.addEventListener("click", resetAll);
-				noResultsResetBtn.addEventListener("click", resetAll);
-
-				// Filter Pill clicks
-				filterPills.forEach(pill => {
-					pill.addEventListener("click", function() {
-						if (this.classList.contains("active") && this.dataset.filter !== "all") {
-							// Clicking active pill resets to all
-							this.classList.remove("active");
-							const allPill = document.querySelector('.filter-pill[data-filter="all"]');
-							if (allPill) allPill.classList.add("active");
-						} else {
-							filterPills.forEach(p => p.classList.remove("active"));
-							this.classList.add("active");
-						}
-						filterEvents();
-					});
-				});
-
-				// Keyboard shortcuts: '/' to focus, 'Escape' to clear
-				document.addEventListener("keydown", function(e) {
-					if (e.key === "/" && document.activeElement !== searchInput && !["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) {
-						e.preventDefault();
-						searchInput.focus();
-						searchInput.select();
-					} else if (e.key === "Escape" && document.activeElement === searchInput) {
-						if (searchInput.value.length > 0) {
-							searchInput.value = "";
-							filterEvents();
-						} else {
-							searchInput.blur();
-						}
-					}
-				});
+				clearBtn.addEventListener("click", clearSearch);
+				resetBtn.addEventListener("click", clearSearch);
+				noResultsResetBtn.addEventListener("click", clearSearch);
 
 				// Floating Back-to-Top button
 				window.addEventListener("scroll", function() {
@@ -338,20 +194,12 @@
 					window.scrollTo({ top: 0, behavior: "smooth" });
 				});
 
-				// Deep linking from URL parameters
+				// Deep linking from ?q=...
+				const urlParams = new URLSearchParams(window.location.search);
 				if (urlParams.get("q")) {
 					searchInput.value = urlParams.get("q");
+					filterEvents();
 				}
-				if (urlParams.get("filter")) {
-					const targetPill = document.querySelector('.filter-pill[data-filter="' + urlParams.get("filter") + '"]');
-					if (targetPill) {
-						filterPills.forEach(p => p.classList.remove("active"));
-						targetPill.classList.add("active");
-					}
-				}
-
-				// Initial run: ensures proper alternating classes and reflects any URL query
-				filterEvents();
 			});
 		</script>
 

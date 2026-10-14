@@ -4,10 +4,11 @@ permalink: /sitemap.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign base_site_url = "https://dipsmindmatters.co.in" %}
   {% for page in site.pages %}
-    {% unless page.url contains "404" or page.url contains ".xml" or page.url contains "robots.txt" or page.url contains "index-dev" %}
+    {% unless page.url contains "404" or page.url contains ".xml" or page.url contains ".css" or page.url contains ".js" or page.url contains "robots.txt" or page.url contains "index-dev" or page.url == "/2023/" or page.url == "/2024/" %}
     <url>
-      <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
+      <loc>{{ base_site_url }}{{ page.url | remove: "index.html" }}</loc>
       <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
       <changefreq>{% if page.url == "/" %}weekly{% else %}monthly{% endif %}</changefreq>
       <priority>{% if page.url == "/" %}1.0{% else %}0.7{% endif %}</priority>
@@ -16,10 +17,18 @@ permalink: /sitemap.xml
   {% endfor %}
   {% for event in site.events %}
     <url>
-      <loc>{{ site.url }}{{ event.url }}</loc>
+      <loc>{{ base_site_url }}{{ event.url }}</loc>
       <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
+    </url>
+  {% endfor %}
+  {% for retro in site.retrospectives %}
+    <url>
+      <loc>{{ base_site_url }}{{ retro.url }}</loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
     </url>
   {% endfor %}
 </urlset>

@@ -106,16 +106,145 @@
 				const backToTopBtn = document.getElementById("events-back-to-top");
 
 				const totalEvents = eventLinks.length;
+				const originalOrder = [...eventLinks];
+
+				// Semantic Synonyms & Association Graph
+				const SYNONYMS = {
+					"dance": ["natyalaya", "dancing", "dancer", "classical", "bharatanatyam", "kathak", "odissi", "kuchipudi", "choreography", "movement", "rhythm", "mudra"],
+					"dancing": ["natyalaya", "dance", "classical", "movement"],
+					"debate": ["yuva", "sansad", "parliament", "debating", "policy", "bill", "politics", "speech", "discussion", "mun", "mock", "law", "resolution"],
+					"debating": ["yuva", "sansad", "parliament", "debate"],
+					"parliament": ["yuva", "sansad", "debate", "policy", "bill", "ministry", "ministers", "government"],
+					"theatre": ["nukkad", "natak", "drama", "play", "acting", "actor", "skit", "street", "performance", "theater"],
+					"theater": ["nukkad", "natak", "drama", "play", "acting", "skit", "street"],
+					"drama": ["nukkad", "natak", "theatre", "play", "acting", "street play", "skit", "performance"],
+					"acting": ["nukkad", "natak", "drama", "theatre", "street play", "skit", "performance"],
+					"skit": ["nukkad", "natak", "drama", "street play"],
+					"speech": ["jam", "speaking", "impromptu", "extempore", "elocution", "talk", "oratory", "buzzer"],
+					"speaking": ["jam", "speech", "impromptu", "extempore", "talk", "oratory", "yuva"],
+					"talk": ["jam", "speaking", "speech", "impromptu"],
+					"art": ["kalakriti", "poster", "painting", "drawing", "sketching", "visual", "canvas", "sheet", "colors"],
+					"poster": ["kalakriti", "art", "drawing", "painting", "sheet", "visual"],
+					"painting": ["kalakriti", "art", "poster", "drawing"],
+					"drawing": ["kalakriti", "art", "poster", "painting"],
+					"photo": ["drishti", "photography", "photographer", "camera", "picture", "photos", "shoot"],
+					"photography": ["drishti", "photo", "camera", "pictures", "photographer", "visual"],
+					"camera": ["drishti", "photo", "photography"],
+					"poetry": ["manakaavya", "poem", "poems", "poet", "verse", "writing", "rhyme", "literature"],
+					"poem": ["manakaavya", "poetry", "poet", "verse", "writing"],
+					"poems": ["manakaavya", "poetry", "poem", "verse"],
+					"verse": ["manakaavya", "poetry", "poem", "writing"],
+					"writing": ["manakaavya", "poetry", "poem", "research", "paper"],
+					"business": ["pitch", "perfect", "startup", "entrepreneur", "entrepreneurship", "presentation", "ppt", "idea", "model", "slides"],
+					"startup": ["pitch", "business", "entrepreneur", "presentation", "idea"],
+					"entrepreneur": ["pitch", "business", "startup", "presentation"],
+					"entrepreneurship": ["pitch", "business", "startup", "presentation"],
+					"pitch": ["pitch perfect", "business", "startup", "entrepreneur", "presentation", "ppt"],
+					"presentation": ["pitch", "slides", "ppt", "business"],
+					"research": ["behaviour", "scientists", "symposium", "paper", "apa", "study", "science", "investigation"],
+					"science": ["behaviour", "scientists", "research", "study"],
+					"psychology": ["mentalist", "behaviour", "scientists", "mind", "cognition", "perception", "behavior", "theories"],
+					"mind": ["mentalist", "psychology", "cognition", "behaviour"],
+					"clues": ["mentalist", "mystery", "psychology", "puzzle"],
+					"mystery": ["mentalist", "clues", "puzzle"],
+					"video": ["reel", "making", "short film", "instagram", "clip", "filming", "media"],
+					"reel": ["reel making", "video", "short film", "instagram", "online", "clip", "reels"],
+					"reels": ["reel", "making", "video", "instagram"],
+					"film": ["reel", "video", "short film", "making"],
+					"online": ["reel", "making", "submission"],
+					"submission": ["reel", "making", "online", "email"],
+					"solo": ["drishti", "natyalaya", "jam", "kalakriti", "manakaavya", "reel"],
+					"individual": ["drishti", "natyalaya", "jam", "kalakriti", "manakaavya", "reel"],
+					"team": ["yuva", "sansad", "mentalist", "natyalaya", "pitch", "nukkad", "behaviour"],
+					"group": ["yuva", "sansad", "mentalist", "natyalaya", "pitch", "nukkad", "behaviour"]
+				};
+
+				const STOPWORDS = new Set(["a", "an", "the", "in", "on", "at", "for", "to", "of", "and", "or", "is", "event", "events", "competition", "competitions", "about", "with", "by"]);
+
+				// Lightweight Word Stemmer
+				function stem(w) {
+					if (!w || w.length <= 3) return w || "";
+					if (w.endsWith("ing") && w.length > 5) return w.slice(0, -3);
+					if (w.endsWith("tion") && w.length > 6) return w.slice(0, -4);
+					if (w.endsWith("ers") && w.length > 5) return w.slice(0, -3);
+					if (w.endsWith("er") && w.length > 4) return w.slice(0, -2);
+					if (w.endsWith("ed") && w.length > 4) return w.slice(0, -2);
+					if (w.endsWith("es") && w.length > 4) return w.slice(0, -2);
+					if (w.endsWith("ies") && w.length > 5) return w.slice(0, -3) + "y";
+					if (w.endsWith("e") && w.length > 4) return w.slice(0, -1);
+					if (w.endsWith("s") && w.length > 3 && !w.endsWith("ss")) return w.slice(0, -1);
+					return w;
+				}
+
+				// Fast Levenshtein distance for typo tolerance
+				function levenshtein(a, b) {
+					if (a === b) return 0;
+					if (Math.abs(a.length - b.length) > 2) return 99;
+					const m = [];
+					for (let i = 0; i <= b.length; i++) m[i] = [i];
+					for (let j = 0; j <= a.length; j++) m[0][j] = j;
+					for (let i = 1; i <= b.length; i++) {
+						for (let j = 1; j <= a.length; j++) {
+							m[i][j] = b.charAt(i - 1) === a.charAt(j - 1)
+								? m[i - 1][j - 1]
+								: Math.min(m[i - 1][j - 1] + 1, m[i][j - 1] + 1, m[i - 1][j] + 1);
+						}
+					}
+					return m[b.length][a.length];
+				}
+
+				// Grade eligibility mapping
+				const GRADE_MAP = {
+					"8": ["drishti", "natyalaya", "jam", "kalakriti", "reel making"],
+					"viii": ["drishti", "natyalaya", "jam", "kalakriti", "reel making"],
+					"9": ["yuva sansad", "the mentalist", "drishti", "natyalaya", "jam", "kalakriti", "nukkad natak", "behaviour scientists", "reel making"],
+					"ix": ["yuva sansad", "the mentalist", "drishti", "natyalaya", "jam", "kalakriti", "nukkad natak", "behaviour scientists", "reel making"],
+					"10": ["yuva sansad", "the mentalist", "drishti", "natyalaya", "jam", "kalakriti", "pitch perfect", "nukkad natak", "manakaavya", "behaviour scientists", "reel making"],
+					"x": ["yuva sansad", "the mentalist", "drishti", "natyalaya", "jam", "kalakriti", "pitch perfect", "nukkad natak", "manakaavya", "behaviour scientists", "reel making"],
+					"11": ["all"],
+					"xi": ["all"],
+					"12": ["all"],
+					"xii": ["all"]
+				};
+
+				// Pre-index each event card
+				const indexedEvents = eventLinks.map(link => {
+					const name = (link.dataset.name || "").toLowerCase();
+					const tags = (link.dataset.tags || "").toLowerCase();
+					const date = (link.dataset.date || "").toLowerCase();
+					const venue = (link.dataset.venue || "").toLowerCase();
+					const participants = (link.dataset.participants || "").toLowerCase();
+					const description = (link.dataset.description || "").toLowerCase();
+
+					const nameWords = name.replace(/[^a-z0-9]/g, " ").split(/\s+/).filter(Boolean);
+					const tagWords = tags.replace(/[^a-z0-9]/g, " ").split(/\s+/).filter(Boolean);
+					const fullText = (name + " " + tags + " " + date + " " + venue + " " + participants + " " + description).toLowerCase();
+
+					return {
+						link,
+						name,
+						tags,
+						date,
+						venue,
+						participants,
+						description,
+						nameWords,
+						tagWords,
+						fullText,
+						nameStems: nameWords.map(stem),
+						tagStems: tagWords.map(stem)
+					};
+				});
 
 				function filterEvents() {
-					const query = (searchInput.value || "").trim().toLowerCase();
-					const terms = query.split(/\s+/).filter(t => t.length > 0);
+					const rawQuery = (searchInput.value || "").trim().toLowerCase();
 
-					// If no query, show the whole page normally
-					if (terms.length === 0) {
-						eventLinks.forEach(link => {
+					// 1. If empty query, restore full page in original order
+					if (!rawQuery) {
+						originalOrder.forEach(link => {
 							link.style.display = "";
 							link.classList.remove("is-even");
+							eventsContainer.appendChild(link);
 						});
 						eventsContainer.classList.remove("is-filtered");
 						clearBtn.style.display = "none";
@@ -124,48 +253,155 @@
 						return;
 					}
 
-					// When query exists, filter in real-time
 					clearBtn.style.display = "flex";
 					eventsContainer.classList.add("is-filtered");
 
-					let matchCount = 0;
-					let visibleIndex = 0;
+					// Normalize tokens & extract phrases
+					const cleanQuery = rawQuery.replace(/[^a-z0-9\s]/g, " ");
+					const rawTokens = cleanQuery.split(/\s+/).filter(Boolean);
+					const nonStop = rawTokens.filter(t => !STOPWORDS.has(t));
+					const tokens = nonStop.length > 0 ? nonStop : rawTokens;
 
-					eventLinks.forEach(link => {
-						const name = link.dataset.name || "";
-						const tags = link.dataset.tags || "";
-						const date = link.dataset.date || "";
-						const venue = link.dataset.venue || "";
-						const participants = link.dataset.participants || "";
-						const description = link.dataset.description || "";
+					// Check phrase-level shortcuts (day 1, day 2)
+					const isDay1Query = rawQuery.includes("day 1") || rawQuery.includes("day1") || rawQuery.includes("first day");
+					const isDay2Query = rawQuery.includes("day 2") || rawQuery.includes("day2") || rawQuery.includes("second day");
 
-						const searchableText = (name + " " + tags + " " + date + " " + venue + " " + participants + " " + description).toLowerCase();
+					const matchedResults = [];
+					const nonMatchedLinks = [];
 
-						const matches = terms.every(term => searchableText.includes(term));
+					indexedEvents.forEach(item => {
+						let totalScore = 0;
+						let allTokensMatched = true;
 
-						if (matches) {
-							link.style.display = "";
-							if (visibleIndex % 2 === 1) {
-								link.classList.add("is-even");
-							} else {
-								link.classList.remove("is-even");
+						// Check day phrases
+						if (isDay1Query && (item.date.includes("30th") || item.date.includes("30"))) {
+							totalScore += 50;
+						}
+						if (isDay2Query && (item.date.includes("31st") || item.date.includes("31"))) {
+							totalScore += 50;
+						}
+
+						// Evaluate each query token against this event
+						for (const token of tokens) {
+							let tokenScore = 0;
+							const tokenStem = stem(token);
+
+							// A. Exact Name Substring Match (Highest priority)
+							if (item.name.includes(token)) {
+								tokenScore += 90;
+							} else if (item.tags.includes(token)) {
+								tokenScore += 50;
+							} else if (item.date.includes(token)) {
+								tokenScore += 35;
+							} else if (item.description.includes(token)) {
+								tokenScore += 25;
 							}
-							visibleIndex++;
-							matchCount++;
+
+							// B. Stemming match against name & tags
+							if (tokenScore === 0) {
+								if (item.nameStems.some(s => s === tokenStem)) {
+									tokenScore = Math.max(tokenScore, 75);
+								} else if (item.tagStems.some(s => s === tokenStem)) {
+									tokenScore = Math.max(tokenScore, 40);
+								}
+							}
+
+							// C. Synonyms & Semantic Association Expansion
+							if (tokenScore === 0 && SYNONYMS[token]) {
+								for (const syn of SYNONYMS[token]) {
+									if (item.fullText.includes(syn)) {
+										tokenScore = Math.max(tokenScore, 45);
+										break;
+									}
+								}
+							}
+
+							// D. Typo-tolerant Fuzzy Matching (Levenshtein)
+							if (tokenScore === 0 && token.length >= 4) {
+								const maxDist = token.length >= 7 ? 2 : 1;
+								// Test name words
+								for (const nw of item.nameWords) {
+									if (levenshtein(token, nw) <= maxDist) {
+										tokenScore = Math.max(tokenScore, 65);
+										break;
+									}
+								}
+								// Test tag words
+								if (tokenScore === 0) {
+									for (const tw of item.tagWords) {
+										if (levenshtein(token, tw) <= maxDist) {
+											tokenScore = Math.max(tokenScore, 35);
+											break;
+										}
+									}
+								}
+							}
+
+							// E. Date shortcuts ("30", "30th", "31", "31st", "online")
+							if (tokenScore === 0) {
+								if ((token === "30" || token === "30th") && item.date.includes("30")) {
+									tokenScore += 30;
+								} else if ((token === "31" || token === "31st") && item.date.includes("31")) {
+									tokenScore += 30;
+								} else if ((token === "online" || token === "submission" || token === "24" || token === "24th") && item.date.includes("24th")) {
+									tokenScore += 40;
+								}
+							}
+
+							// F. Grade & Class shortcuts
+							if (tokenScore === 0 && GRADE_MAP[token]) {
+								const eligible = GRADE_MAP[token];
+								if (eligible.includes("all") || eligible.some(n => item.name.includes(n))) {
+									tokenScore += 25;
+								}
+							}
+
+							if (tokenScore === 0) {
+								allTokensMatched = false;
+								break;
+							} else {
+								totalScore += tokenScore;
+							}
+						}
+
+						if (allTokensMatched && totalScore > 0) {
+							matchedResults.push({ link: item.link, score: totalScore });
 						} else {
-							link.style.display = "none";
-							link.classList.remove("is-even");
+							nonMatchedLinks.push(item.link);
 						}
 					});
 
-					if (matchCount === 0) {
+					// 2. Sort matched cards by relevance score (highest first)
+					matchedResults.sort((a, b) => b.score - a.score);
+
+					// 3. Render matched cards in sorted order and hide non-matching
+					if (matchedResults.length === 0) {
+						indexedEvents.forEach(item => {
+							item.link.style.display = "none";
+							item.link.classList.remove("is-even");
+						});
 						noResultsBox.style.display = "block";
-						noResultsQuery.textContent = query;
+						noResultsQuery.textContent = rawQuery;
 						searchMeta.style.display = "none";
 					} else {
 						noResultsBox.style.display = "none";
 						searchMeta.style.display = "flex";
-						countBadge.textContent = "Showing " + matchCount + " of " + totalEvents + " events";
+						countBadge.textContent = "Showing " + matchedResults.length + " of " + totalEvents + " events";
+
+						matchedResults.forEach((res, index) => {
+							res.link.style.display = "";
+							if (index % 2 === 1) {
+								res.link.classList.add("is-even");
+							} else {
+								res.link.classList.remove("is-even");
+							}
+							eventsContainer.appendChild(res.link);
+						});
+
+						nonMatchedLinks.forEach(link => {
+							link.style.display = "none";
+							link.classList.remove("is-even");
+						});
 					}
 				}
 

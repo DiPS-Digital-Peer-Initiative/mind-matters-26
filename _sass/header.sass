@@ -1,4 +1,4 @@
-@import 'colors'
+@use 'colors' as *
 
 
 nav
@@ -11,8 +11,13 @@ nav
 	z-index: 10000
 	font-family: "DM Sans"
 	background-image: linear-gradient($page-color, transparent)
-	.header-title img
-		width: 256px
+	.header-title
+		display: flex
+		align-items: center
+		img
+			width: 256px
+			height: auto
+			display: block
 		
 
 	a
@@ -41,7 +46,7 @@ nav
 			font-size: 20px
 			font-weight: bold
 			color: $theme_dark
-			opacity: 0.5
+			opacity: 0.85
 			transition: all 0.25s
 			&:hover, &:active
 				opacity: 1
@@ -52,9 +57,14 @@ nav
 		padding: 1em 2em
 		width: calc(100vw - 4em)
 		background-color: $page-color
+		.header-title
+			display: flex
+			align-items: center
+			height: 100%
 		.header-title img
-			height: 48px
+			height: 38px
 			width: auto
+			display: block
 		img
 			height: 16px
 		.link-drawer-handle

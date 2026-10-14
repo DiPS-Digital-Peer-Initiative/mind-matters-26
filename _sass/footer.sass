@@ -1,4 +1,4 @@
-@import "colors"
+@use 'colors' as *
 
 .countdown
 	padding: 10px
@@ -50,6 +50,8 @@ footer
 		color: $theme_light
 		img
 			width: 200px
+			height: auto
+			display: block
 
 	.separator-dotted
 		background: linear-gradient(90deg,$theme_dark 2px,transparent 1%) 50%,linear-gradient($theme_dark 2px,transparent 1%) 50%,$theme_light
@@ -88,7 +90,7 @@ footer
 			a
 				color: $theme_light
 				font-weight: 300
-				opacity: 0.5
+				opacity: 0.85
 				transition: all 0.25s
 				text-decoration: none
 				&:hover, &:active
@@ -100,7 +102,7 @@ footer
 		font-size: 12px
 		color: $theme_light
 		font-weight: 300
-		opacity: 0.5
+		opacity: 0.8
 		font-style: italic
 		font-family: "DM Sans"
 		display: flex

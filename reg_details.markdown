@@ -40,5 +40,3 @@ To Register As an External School <a href="https://entrar.in/cd273632523539f0110
 Check the Registration Fees Details: <a href="/_media/external_D.pdf" class="learn-link">Get the Registration Fees Details ></a>
 
 To Register As an External Delegation <a href="https://entrar.in/cd273632523539f0110095199b821c3c/onlineRegistrationConclave_delegation/3" class="learn-link"> Click Here ></a>
-
-<div class="separator"></div>

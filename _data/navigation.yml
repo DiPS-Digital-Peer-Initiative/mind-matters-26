@@ -6,8 +6,6 @@ items:
   - name: Events
     link: /events
 
-  - name: Event Schedule
-    link: /schedule
     
   - name: 2024
     link: /2024    

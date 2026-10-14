@@ -23,7 +23,7 @@ email: dpspeereducators24@gmail.com
 description: >-
   The Young Adolescent Peer Educators Leadership Conclave - Mind Matters by DPS Bangalore South.
 baseurl: ""
-url: ""
+url: "https://dipsmindmatters.co.in"
 
 # Build settings
 plugins:
@@ -32,6 +32,8 @@ plugins:
 
 sass:
   sass_dir: _sass
+  silence_deprecations:
+    - import
 
 collections:
   events:

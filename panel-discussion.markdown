@@ -33,12 +33,12 @@ The Mind Matters 2024 regional conclave will feature dynamic panel discussion by
 - Student Empowerment: Empower students to be advocates for mental health in their communities.
 
 <center>
-	<img src="/_media/pd-1.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/pd-2.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/pd-3.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/pd-4.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/pd-5.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/pd-6.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/pd-7.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/pd-8.jpeg" style="width: 40%; margin: 8px;">
+	<img src="/_media/pd-1.jpeg" alt="Panel Discussion Keynote Address" style="width: 40%; margin: 8px;">
+	<img src="/_media/pd-2.jpeg" alt="Student Panellists in Dialogue" style="width: 40%; margin: 8px;">
+	<img src="/_media/pd-3.jpeg" alt="Expert Moderator Engaging Delegates" style="width: 40%; margin: 8px;">
+	<img src="/_media/pd-4.jpeg" alt="Audience Q&A Session" style="width: 40%; margin: 8px;">
+	<img src="/_media/pd-5.jpeg" alt="Peer Educators Sharing Insights" style="width: 40%; margin: 8px;">
+	<img src="/_media/pd-6.jpeg" alt="School Representatives Participating" style="width: 40%; margin: 8px;">
+	<img src="/_media/pd-7.jpeg" alt="Youth Mental Health Roundtable" style="width: 40%; margin: 8px;">
+	<img src="/_media/pd-8.jpeg" alt="Panel Discussion Closing Remarks" style="width: 40%; margin: 8px;">
 </center>

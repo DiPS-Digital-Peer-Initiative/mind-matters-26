@@ -22,7 +22,7 @@
 		</div>
 	</div>
 	
-	<a href="/reg_details/" class="register-link">Register Now..!</a>
+	<a href="{{ '/reg_details/' | relative_url }}" class="register-link">Register Now..!</a>
 </div>
 
 <script>
@@ -71,9 +71,9 @@
 <footer>
 	<div class="footer-flex-content">
 		<div>
-			<a href="/" >
+			<a href="{{ '/' | relative_url }}">
 			<div class="footer-heading">
-				<img src="/_media/branding/light.png">
+				<img src="{{ '/_media/branding/2026_light.png' | relative_url }}" srcset="{{ '/_media/branding/2026_light.png' | relative_url }} 1x, {{ '/_media/branding/2026_light@2x.png' | relative_url }} 2x" alt="Mind Matters 2026">
 			</div>
 			</a>
 		</div>

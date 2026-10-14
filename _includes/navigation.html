@@ -1,18 +1,20 @@
 <div id="background">
 	<canvas id="bubbles-canvas" class="p5Canvas" width="1227" height="247" style="position: absolute; left: 0px; top: 0px; z-index:-1; margin-top:-1px;"></canvas>
 	<div class="fade"></div>
-	<script src="/_media/js/d3-delaunay.js"></script>
-	<script src="/_media/js/bubbles.js"></script>
+	<script src="{{ '/_media/js/d3-delaunay.js' | relative_url }}"></script>
+	<script src="{{ '/_media/js/bubbles.js' | relative_url }}"></script>
 </div>
 
 <nav id="nav">
 	
-	<a href="/"><div class="header-title"><img src="/_media/branding/dark.png"></div></a>
+	<a href="{{ '/' | relative_url }}"><div class="header-title"><img src="{{ '/_media/branding/2026_dark.png' | relative_url }}" srcset="{{ '/_media/branding/2026_dark.png' | relative_url }} 1x, {{ '/_media/branding/2026_dark@2x.png' | relative_url }} 2x" alt="Mind Matters 2026"></div></a>
 
 	<div id="link-drawer" class="links">
 		<div class="links-container">
 			{% for item in site.data.navigation.items %}
-				<a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %}style="opacity: 1; font-weight: bold;"{% endif %}>
+				{% assign current_clean = page.url | remove: "/" | remove: ".html" %}
+				{% assign item_clean = item.link | remove: "/" | remove: ".html" %}
+				<a href="{{ site.baseurl }}{{ item.link }}" {% if current_clean == item_clean and item_clean != "" %}style="opacity: 1; font-weight: bold;"{% endif %}>
 					{{ item.name }}
 				</a>
 			{% endfor %}
@@ -20,7 +22,7 @@
 		
 	 </div>
 	
-	<button id="link-drawer-handle" class="link-drawer-handle"><img src="/_media/chevron-right.svg"></button>
+	<button id="link-drawer-handle" class="link-drawer-handle" aria-label="Toggle navigation menu"><img src="{{ '/_media/chevron-right.svg' | relative_url }}" alt="Toggle navigation menu"></button>
 
 	<script>
 		var b = document.getElementById("link-drawer-handle");
@@ -41,6 +43,3 @@
 		});
 	</script>
 </nav>
-<div style="margin: auto; width: fit-content; text-align: center; font-family: Fraunces; font-size: 18px; background-color: #0A3922;color: #CBDBB5;border-radius: 100px;padding: 5px 15px;">
-	<b>ANNOUNCEMENT: </b>The last date for registration has been extended till 30th September 2025.
-</div>

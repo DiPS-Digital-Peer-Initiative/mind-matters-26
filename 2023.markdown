@@ -15,16 +15,16 @@ The combination of competition, celebration, and live music made the Mind Matter
 
 
 <center>
-	<img src="/_media/2023-1.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/2023-2.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/2023-3.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/2023-4.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/2023-5.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/2023-6.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/2023-7.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/2023-8.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/2023-9.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/2023-10.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/2023-11.jpeg" style="width: 40%; margin: 8px;">
-	<img src="/_media/2023-12.jpeg" style="width: 40%; margin: 8px;">
+	<img src="/_media/2023-1.jpeg" alt="Mind Matters 2023 Opening Ceremony" style="width: 40%; margin: 8px;">
+	<img src="/_media/2023-2.jpeg" alt="Mind Matters 2023 Peer Educator Presentations" style="width: 40%; margin: 8px;">
+	<img src="/_media/2023-3.jpeg" alt="Mind Matters 2023 Student Workshop" style="width: 40%; margin: 8px;">
+	<img src="/_media/2023-4.jpeg" alt="Mind Matters 2023 Interactive Activities" style="width: 40%; margin: 8px;">
+	<img src="/_media/2023-5.jpeg" alt="Mind Matters 2023 Delegates Collaboration" style="width: 40%; margin: 8px;">
+	<img src="/_media/2023-6.jpeg" alt="Mind Matters 2023 Stage Performance" style="width: 40%; margin: 8px;">
+	<img src="/_media/2023-7.jpeg" alt="Mind Matters 2023 Cultural Evening" style="width: 40%; margin: 8px;">
+	<img src="/_media/2023-8.jpeg" alt="Mind Matters 2023 Award Ceremony" style="width: 40%; margin: 8px;">
+	<img src="/_media/2023-9.jpeg" alt="Mind Matters 2023 Exhibitions and Stalls" style="width: 40%; margin: 8px;">
+	<img src="/_media/2023-10.jpeg" alt="Mind Matters 2023 Student Competitions" style="width: 40%; margin: 8px;">
+	<img src="/_media/2023-11.jpeg" alt="Mind Matters 2023 Panel Discussion" style="width: 40%; margin: 8px;">
+	<img src="/_media/2023-12.jpeg" alt="Mind Matters 2023 Grand Finale" style="width: 40%; margin: 8px;">
 </center>

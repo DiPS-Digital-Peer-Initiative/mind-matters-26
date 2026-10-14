@@ -1,0 +1,132 @@
+<div id="cookie-consent-banner" class="cookie-consent-banner" style="display: none;">
+  <div class="cookie-consent-content">
+    <p>
+      We use cookies and local storage to ensure smooth site functionality, remember your preferences, and analyze event engagement. Learn more in our <a href="{{ '/privacy/' | relative_url }}" class="cookie-policy-link">Privacy Policy</a>.
+    </p>
+    <div class="cookie-consent-actions">
+      <button id="cookie-accept-btn" class="cookie-btn cookie-accept" type="button">Accept All</button>
+      <button id="cookie-decline-btn" class="cookie-btn cookie-decline" type="button">Essential Only</button>
+    </div>
+  </div>
+</div>
+
+<style>
+  .cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    background-color: #0A3922;
+    color: #CBDBB5;
+    padding: 16px 24px;
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.2);
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    border-top: 1px solid rgba(203, 219, 181, 0.25);
+  }
+  .cookie-consent-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .cookie-consent-content p {
+    margin: 0;
+    flex: 1 1 500px;
+  }
+  .cookie-policy-link {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  .cookie-consent-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .cookie-btn {
+    border: none;
+    border-radius: 999px;
+    padding: 9px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .cookie-accept {
+    background-color: #CBDBB5;
+    color: #0A3922;
+  }
+  .cookie-accept:hover {
+    background-color: #ffffff;
+    transform: translateY(-1px);
+  }
+  .cookie-decline {
+    background-color: transparent;
+    color: #CBDBB5;
+    border: 1px solid #CBDBB5;
+  }
+  .cookie-decline:hover {
+    background-color: rgba(203, 219, 181, 0.1);
+    color: #fff;
+  }
+  @media (max-width: 600px) {
+    .cookie-consent-banner {
+      padding: 14px 16px;
+    }
+    .cookie-consent-content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+    }
+    .cookie-consent-actions {
+      justify-content: flex-end;
+    }
+  }
+</style>
+
+<script>
+  (function() {
+    var banner = document.getElementById('cookie-consent-banner');
+    if (!banner) return;
+    
+    var consent = localStorage.getItem('mm_cookie_consent');
+    if (!consent) {
+      banner.style.display = 'block';
+    }
+
+    var acceptBtn = document.getElementById('cookie-accept-btn');
+    var declineBtn = document.getElementById('cookie-decline-btn');
+
+    if (acceptBtn) {
+      acceptBtn.addEventListener('click', function() {
+        localStorage.setItem('mm_cookie_consent', 'accepted');
+        banner.style.display = 'none';
+        if (typeof gtag === 'function') {
+          gtag('consent', 'update', {
+            'analytics_storage': 'granted'
+          });
+        }
+      });
+    }
+
+    if (declineBtn) {
+      declineBtn.addEventListener('click', function() {
+        localStorage.setItem('mm_cookie_consent', 'essential');
+        banner.style.display = 'none';
+        if (typeof gtag === 'function') {
+          gtag('consent', 'update', {
+            'analytics_storage': 'denied'
+          });
+        }
+      });
+    }
+  })();
+</script>

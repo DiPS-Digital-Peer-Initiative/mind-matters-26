@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Mind Matters 2023 -- A Retrospective
+title: Mind Matters 2023
 year: 2023
 edition: Inaugural Edition
 date_of_event: 7th & 8th October 2023
@@ -9,7 +9,7 @@ description: The inaugural edition of the Young Adolescent Peer Educator's Leade
 permalink: /retrospective/2023/
 ---
 
-# Mind Matters 2023 -- A Retrospective
+# Mind Matters 2023
 
 The Young Adolescent Peer Educator’s Leadership Conclave - Mind Matters 2023 saw its inception in the year 2023 under the able guidance of the Master Peer Educators and Peer Educators of Delhi Public School, Bangalore South. The event was organised on 7th and 8th October to celebrate World Mental Health Day on 8th October 2023. The Conclave was a significant event as it saw active participation from students all across the state, aiming to promote mental health awareness and education among one another. 
 

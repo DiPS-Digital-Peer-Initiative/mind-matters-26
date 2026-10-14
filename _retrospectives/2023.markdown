@@ -1,5 +1,5 @@
 ---
-layout: retrospective
+layout: default
 title: Mind Matters 2023
 year: 2023
 edition: Inaugural Edition
@@ -7,44 +7,9 @@ date_of_event: 7th & 8th October 2023
 banner_image: /_media/2023-10.jpeg
 description: The inaugural edition of the Young Adolescent Peer Educator's Leadership Conclave, founded under the guidance of Master Peer Educators of DPS Bangalore South to promote youth mental health awareness.
 permalink: /retrospective/2023/
-gallery:
-  - image: /_media/2023-1.jpeg
-    title: Opening Ceremony
-    caption: Inauguration of the inaugural Mind Matters Conclave at DPS Bangalore South.
-  - image: /_media/2023-2.jpeg
-    title: Peer Educator Presentations
-    caption: Master Peer Educators introducing the core mission of youth mental health.
-  - image: /_media/2023-3.jpeg
-    title: Student Workshops
-    caption: Hands-on interactive workshops on empathy, emotional resilience, and support.
-  - image: /_media/2023-4.jpeg
-    title: Interactive Engagement
-    caption: Student-led activities fostering open dialogue and destigmatizing mental health.
-  - image: /_media/2023-5.jpeg
-    title: Delegates Collaboration
-    caption: Cross-school collaboration among student leaders and peer educators.
-  - image: /_media/2023-6.jpeg
-    title: Stage Performance
-    caption: Powerful cultural and theatrical performances reflecting youth wellness.
-  - image: /_media/2023-7.jpeg
-    title: Cultural Evening
-    caption: An uplifting evening connecting students, teachers, and guests in a relaxed setting.
-  - image: /_media/2023-8.jpeg
-    title: Award Ceremony
-    caption: Honoring winners of Nukkad Natak, Yuva Sansad, Natyalaya, and JAM.
-  - image: /_media/2023-9.jpeg
-    title: Exhibitions & Stalls
-    caption: Creative art, posters, and educational displays promoting mental wellness.
-  - image: /_media/2023-10.jpeg
-    title: Student Competitions
-    caption: Dynamic inter-school competitions celebrating talent, insight, and advocacy.
-  - image: /_media/2023-11.jpeg
-    title: Panel Discussion
-    caption: Experts and educators exploring youth mental wellness frameworks.
-  - image: /_media/2023-12.jpeg
-    title: Grand Finale
-    caption: Powerhouse live musical performance by Ms. Sinchan Dixit closing the conclave.
 ---
+
+# Mind Matters 2023
 
 The Young Adolescent Peer Educator’s Leadership Conclave - Mind Matters 2023 saw its inception in the year 2023 under the able guidance of the Master Peer Educators and Peer Educators of Delhi Public School, Bangalore South. The event was organised on 7th and 8th October to celebrate World Mental Health Day on 8th October 2023. The Conclave was a significant event as it saw active participation from students all across the state, aiming to promote mental health awareness and education among one another. 
 
@@ -53,3 +18,18 @@ The inception of the Regional Summit came to our attention when we participated 
 Winners of these competitions were awarded certificates and prizes, recognising their efforts and contributions to raising awareness. The grand finale was a highlight of the conclave, marked by the much-anticipated prize distribution ceremony and the powerhouse live musical performance of Ms. Sinchan Dixit. The atmosphere was filled with excitement as live performances took centre stage, offering a blend of music that resonated with the theme of mental wellness. The musical evening not only entertained but also provided a platform for students and guests to unwind and connect in a relaxed environment.
 
 The combination of competition, celebration, and live music made the Mind Matters Conclave a memorable event, reinforcing the importance of mental health in an engaging and uplifting manner.
+
+<div class="photo-grid">
+	<img src="/_media/2023-1.jpeg" alt="Mind Matters 2023" loading="lazy">
+	<img src="/_media/2023-2.jpeg" alt="Mind Matters 2023" loading="lazy">
+	<img src="/_media/2023-3.jpeg" alt="Mind Matters 2023" loading="lazy">
+	<img src="/_media/2023-4.jpeg" alt="Mind Matters 2023" loading="lazy">
+	<img src="/_media/2023-5.jpeg" alt="Mind Matters 2023" loading="lazy">
+	<img src="/_media/2023-6.jpeg" alt="Mind Matters 2023" loading="lazy">
+	<img src="/_media/2023-7.jpeg" alt="Mind Matters 2023" loading="lazy">
+	<img src="/_media/2023-8.jpeg" alt="Mind Matters 2023" loading="lazy">
+	<img src="/_media/2023-9.jpeg" alt="Mind Matters 2023" loading="lazy">
+	<img src="/_media/2023-10.jpeg" alt="Mind Matters 2023" loading="lazy">
+	<img src="/_media/2023-11.jpeg" alt="Mind Matters 2023" loading="lazy">
+	<img src="/_media/2023-12.jpeg" alt="Mind Matters 2023" loading="lazy">
+</div>

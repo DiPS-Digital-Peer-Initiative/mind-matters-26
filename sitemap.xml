@@ -6,7 +6,7 @@ permalink: /sitemap.xml
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% assign base_site_url = "https://dipsmindmatters.co.in" %}
   {% for page in site.pages %}
-    {% unless page.url contains "404" or page.url contains ".xml" or page.url contains ".css" or page.url contains ".js" or page.url contains "robots.txt" or page.url contains "index-dev" or page.url == "/2023/" or page.url == "/2024/" %}
+    {% unless page.url contains "404" or page.url contains ".xml" or page.url contains ".css" or page.url contains ".js" or page.url contains "robots.txt" or page.url contains "index-dev" or page.url == "/2023/" or page.url == "/2024/" or page.url == "/2025/" %}
     <url>
       <loc>{{ base_site_url }}{{ page.url | remove: "index.html" }}</loc>
       <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>

@@ -1,0 +1,8 @@
+---
+layout: default
+title: Mind Matters 2025
+permalink: /2025/
+---
+
+<script>window.location.replace("{{ '/retrospective/2025/' | relative_url }}");</script>
+<p>Redirecting to <a href="{{ '/retrospective/2025/' | relative_url }}">Mind Matters 2025 Retrospective</a>...</p>

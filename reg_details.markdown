@@ -28,3 +28,15 @@ permalink: /reg_details/
 - **Multiple Events:** Participants may take part in multiple events, subject to schedule availability.
 
 <p><strong>Registration Link:</strong> <a href="https://entrar.in/cd273632523539f0110095199b821c3c/mind_matter/TE9ycGtTYmZLRXpna3Y3NDFQc0hSdz09" target="_blank" rel="noopener noreferrer" style="font-weight: bold; text-decoration: underline;">Click Here to Register as an External School / College &gt;</a></p>
+
+<div class="separator"></div>
+
+## External Delegations
+
+- **Official & Private Delegations:** Groups of delegates from external schools or colleges are welcome to participate as official delegations (private delegations, not belonging to one particular school may also register).
+- **Multiple Events:** Delegations may register for multiple events, provided there are no schedule conflicts.
+- **Cross-Institutional Teams:** Delegates do not need to belong to the same school, college, or institution.
+- **Eligible Classes:** Delegates from Classes VIII to XII and first and second-year college students are welcome.
+- **ID Verification:** Participants must carry their school / college ID card and identity proofs.
+
+<p><strong>Registration Link:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSepVI-MBedsVvl7wFWi3YIHzMARQyJdT_rfeUeI0iW0QY6cmg/viewform?usp=header" target="_blank" rel="noopener noreferrer" style="font-weight: bold; text-decoration: underline;">Click Here to Register as an External Delegation &gt;</a></p>
